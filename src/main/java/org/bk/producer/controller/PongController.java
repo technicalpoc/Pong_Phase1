@@ -24,6 +24,10 @@ public class PongController {
 
     @RequestMapping(value = "/message", method = RequestMethod.POST)
     public Resource<MessageAcknowledgement> pongMessage(@RequestBody Message input) {
+    	 
+    	System.out.println("PongController - input : "+input);
+    	System.out.println("input.getId() : "+ input.getPayload());
+    	
         return new Resource<>(
                 new MessageAcknowledgement(input.getId(), input.getPayload(), message));
     }
