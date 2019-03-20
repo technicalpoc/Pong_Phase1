@@ -10,7 +10,7 @@
 //@SpringApplicationConfiguration(classes = PongApplication.class)
 //@WebAppConfiguration
 //public class PongApplicationTests {
-//
+// Test
 //    @Test
 //    public void contextLoads() {
 //    }
